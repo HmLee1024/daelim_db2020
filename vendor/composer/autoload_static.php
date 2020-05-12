@@ -4,13 +4,10 @@
 
 namespace Composer\Autoload;
 
-<<<<<<< HEAD
 class ComposerStaticInit6908510312e7a961b3afad3043d5a79c
-=======
-class ComposerStaticInit0e1b3f9507652e32d6bfcc254a57df24
->>>>>>> db2020/master
 {
     public static $files = array (
+        'a6e27c98c00945ead28d695037bfc102' => __DIR__ . '/..' . '/jiny/mysql/src/Helpers/Helper.php',
         '9f2ca8d9a238e4c80d25576e2bfa4cb3' => __DIR__ . '/../..' . '/Modules/helper.php',
     );
 
@@ -18,6 +15,10 @@ class ComposerStaticInit0e1b3f9507652e32d6bfcc254a57df24
         'M' => 
         array (
             'Modules\\' => 8,
+        ),
+        'J' => 
+        array (
+            'Jiny\\Mysql\\' => 11,
         ),
         'A' => 
         array (
@@ -30,6 +31,10 @@ class ComposerStaticInit0e1b3f9507652e32d6bfcc254a57df24
         array (
             0 => __DIR__ . '/../..' . '/Modules',
         ),
+        'Jiny\\Mysql\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/jiny/mysql/src',
+        ),
         'App\\' => 
         array (
             0 => __DIR__ . '/../..' . '/App',
@@ -39,13 +44,8 @@ class ComposerStaticInit0e1b3f9507652e32d6bfcc254a57df24
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-<<<<<<< HEAD
             $loader->prefixLengthsPsr4 = ComposerStaticInit6908510312e7a961b3afad3043d5a79c::$prefixLengthsPsr4;
             $loader->prefixDirsPsr4 = ComposerStaticInit6908510312e7a961b3afad3043d5a79c::$prefixDirsPsr4;
-=======
-            $loader->prefixLengthsPsr4 = ComposerStaticInit0e1b3f9507652e32d6bfcc254a57df24::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInit0e1b3f9507652e32d6bfcc254a57df24::$prefixDirsPsr4;
->>>>>>> db2020/master
 
         }, null, ClassLoader::class);
     }
