@@ -25,11 +25,14 @@ class Hello{
 
         // 데이터베이스 설정값
         $dbinfo = include("../dbinfo.php");
-        $db = new \Jiny\Mysql\Connection($dbinfo);
+        print_r($dbinfo);
+        $db = new \Jiny\Mysql\Connection($dbinfo); //라이브러리 -> 컴포저로 깔음
+
         // 접속정보 설정
         //$db->setUser("db2020")->setPassword("123456");
         //$db->setSchema("db2020")->setCharset();
         //$db->setHost()->connect(); //PDO 객체를 생성
+        $db->connect(); //PDO 객체를 생성
         
         /*
         if (extension_loaded("PDO") && extension_loaded("pdo_mysql")) {
